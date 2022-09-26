@@ -24,7 +24,7 @@
         <section class="contato">
           <form>
             <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" onkeyup="nomeDigitado()" required />
+            <input type="text" id="nome" onkeyup="validaNome()" required />
             <div id="txtNome"></div>
             <br>
             <label for="email">E-mail:</label><br>
@@ -32,7 +32,7 @@
             <div id="txtEmail"></div>
             <br>
             <label for="assunto">Assunto:</label><br>
-            <textarea name="assunto" id="assunto" rows="6" onkeyup="assuntoDigitado()" required></textarea>
+            <textarea name="assunto" id="assunto" rows="6" onkeyup="validaAssunto()" required></textarea>
             <div id="txtAssunto"></div>
             <br>
             <button onclick="enviar()">Enviar</button>
@@ -53,5 +53,6 @@
           </div>
         </section>
       </main>
+      <script src="assets/js/script.js"></script>
 </body>
 </html>
